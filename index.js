@@ -4,28 +4,20 @@
 	unused: true, undef: true, funcscope: true,
 	laxcomma: true, multistr: true
 */
-// var config = require("./config.json")
-var config = {
-  "views": {
-    "folder": "./jade"
-  },
-  "www": {
-    "port": 5000,
-    "folder": "./public/",
-    "renderer": "jade"
-  }
-}
+var config = require("./config.json")
 
 var express = require("express")
-  , app = express()
   , path = require("path")
-  , jade = require("jade")
+  , app = express()
 
-app.engine("jade", jade.render)
+app.set("views", path.join( __dirname + config.views.folder ) )
 app.set("view engine", "jade")
-app.set("views", path.join(__dirname + config.views.folder))
 
-app.use(express.static(__dirname + config.www.folder));
+app.get("/", function(req,res){
+  res.render("index", config.jadeConfig)
+})
+
+app.use( express.static( path.join( __dirname + config.www.folder ) ) );
 
 app.listen( config.www.port, function() {
   console.log( "taggestwww running on port " + config.www.port )

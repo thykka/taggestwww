@@ -1,0 +1,11 @@
+/* line 14, ../../scss/mobile.scss */
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+}
+
+/* line 18, ../../scss/mobile.scss */
+.navigation {
+  display: relative;
+}

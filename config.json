@@ -1,5 +1,13 @@
 {
-	"express": {
-		"port": 5000
-	}
+  "views": {
+    "folder": "./jade"
+  },
+  "www": {
+    "port": 5000,
+    "folder": "./public/",
+    "renderer": "jade"
+  },
+  "jadeConfig": {
+    "livejs": true
+  }
 }
