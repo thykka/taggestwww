@@ -1,0 +1,24 @@
+{
+  "name": "taggestwww",
+  "version": "0.0.0",
+  "description": "Taggest website",
+  "main": "index.js",
+  "dependencies": {
+    "express": "~4.6.1",
+    "jade": "~1.4.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/thykka/taggestwww"
+  },
+  "author": "Moses Holmström",
+  "license": "AGPL",
+  "bugs": {
+    "url": "https://github.com/thykka/taggestwww/issues"
+  },
+  "homepage": "https://github.com/thykka/taggestwww"
+}

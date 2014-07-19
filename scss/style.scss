@@ -1,0 +1,17 @@
+ /*
+  *	Taggest Base CSS
+  *
+  * URL:       http://github.com/thykka/taggestwww/
+  * author:    Moses Holmström <thykka@gmail.com>
+  * license:   AGPL
+  * comments:  :)
+//*/
+
+@import "functions";
+@import "mixins";
+@import "theme";
+
+html, body {
+	margin: 0; padding: 0;
+	font-family: $font-family;
+}
