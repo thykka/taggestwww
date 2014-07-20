@@ -1,1 +1,19 @@
 $font-family: sans-serif;
+$transTime: 0.15s;
+/* colors */
+$c-fn-1: rgb(248, 247, 230);
+$c-fn-2: rgb(96, 185, 154);
+$c-fn-3: rgb(247, 120, 37);
+$c-fn-4: desaturate(rgb(208, 203, 89), 33%);
+$c-txt-1: rgb(8,8,8);
+$c-txt-dk: $c-txt-1;
+$c-txt-lt: rgb(250,250,250);
+
+$c-fn-dk-1: darken($c-fn-1, 42%);
+$c-fn-lt-1: lighten($c-fn-1, 16%);
+$c-fn-dk-2: darken($c-fn-2, 42%);
+$c-fn-lt-2: lighten($c-fn-2, 16%);
+$c-fn-dk-3: darken($c-fn-3, 42%);
+$c-fn-lt-3: lighten($c-fn-3, 16%);
+$c-fn-dk-4: darken($c-fn-4, 42%);
+$c-fn-lt-4: lighten($c-fn-4, 16%);
