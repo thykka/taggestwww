@@ -35,12 +35,14 @@ $(".menu").on("click", ".nav-item", function(evt) {
 	}
 })
 $("html,body").on("scroll", function(evt) {
-	var scrollTop = evt.target.scrollTop
+	var scrollTop = evt.target.scrollTop +
+		$(".nav-item.current").position().top +
+		$(".nav-menu").height()
 		, page = null
 		, elementTop
 	$(".page").each(function(e, el) {
 		elementTop = $(el).position().top
-		page = (elementTop <= scrollTop) ? el : page
+		page = (elementTop <= scrollTop ) ? el : page
 	})
 	indicate(page)
 })
