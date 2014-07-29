@@ -1,6 +1,7 @@
+@import url("http://fonts.googleapis.com/css?family=Londrina+Solid");
+
 @media (max-width: 767px) {
   /* colors */
-  @import url("http://fonts.googleapis.com/css?family=Londrina+Solid");
   /* line 3, ../../scss/_logo.scss */
   .logo {
     cursor: pointer;
