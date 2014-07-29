@@ -34,8 +34,8 @@ $(".menu").on("click", ".nav-item", function(evt) {
 		}
 	}
 })
-$("html,body").on("scroll", function(evt) {
-	var scrollTop = evt.target.scrollTop +
+$(window).on("scroll", function() {
+	var scrollTop = $("html").scrollTop() +
 		$(".nav-item.current").position().top +
 		$(".nav-menu").height()
 		, page = null
@@ -44,7 +44,6 @@ $("html,body").on("scroll", function(evt) {
 		elementTop = $(el).position().top
 		page = (elementTop <= scrollTop ) ? el : page
 	})
-	console.log(page)
 	indicate(page)
 })
 var indicate = function indicate (element) {

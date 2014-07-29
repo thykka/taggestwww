@@ -55,7 +55,7 @@
 }
 /* line 38, ../../scss/_logo.scss */
 .logo .ltr {
-  font-family: "Londrina Solid", sans-serif;
+  font-family: "Londrina Solid", "Droid Sans", sans-serif;
   display: inline-block;
   flex: 1;
   color: #FFF;
@@ -82,7 +82,7 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: sans-serif;
+  font-family: "Droid Sans", sans-serif;
   font-size: 20px;
   background: #f8f7e6;
   overflow-x: hidden;
@@ -147,7 +147,7 @@ html, body {
 }
 /* line 56, ../../scss/desktop.scss */
 .page h1 {
-  font-family: "Londrina Solid", sans-serif;
+  font-family: "Londrina Solid", "Droid Sans", sans-serif;
   display: block;
   margin: 0;
   padding: 0.4em 0.5rem 0.4em 1rem;
