@@ -17,7 +17,16 @@
 # guard 'compass', project_path: 'not_current_dir', configuration_file: 'path/to/my/compass_config.rb'
 # guard :compass
 
-guard :livereload do
-  watch(%r{public/.+\.(css|js|html)$})
-  # watch(%r{jade/.+\.(jade)$})
+
+puts `compass compile --time --quiet`
+guard :compass do
+  #-watch(%r{(.*)\scss\.s[ac]ss$})
+  watch(%r{(.*)\scss\.s[ac]ss$})
+end
+
+guard :livereload, :grace_period => 0.5 do
+  watch(%r{public/js/.+\.js})
+  watch(%r{jade/(.+)\.jade}) { |m| "public/#{m[1]}.html" }
+  watch(%r{scss/(.+)\.scss}) { |m| "public/css/#{m[1]}.css" }
+	watch(%r{public/.+\.html})
 end

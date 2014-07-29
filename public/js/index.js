@@ -44,12 +44,15 @@ $("html,body").on("scroll", function(evt) {
 		elementTop = $(el).position().top
 		page = (elementTop <= scrollTop ) ? el : page
 	})
+	console.log(page)
 	indicate(page)
 })
 var indicate = function indicate (element) {
 	var navItem = null
 	$(".nav-item a").each(function(e, el){
-		navItem = ( $(el).attr("href") == "#" + $(element).attr("id") ) ? $(el).parent() : navItem;
+		navItem = (
+			$(el).attr("href") == "#" + $(element).attr("id")
+		) ? $(el).parent() : navItem;
 	})
 	if(navItem !== null) {
 		$(".nav-item").each(function(e, el){
@@ -60,9 +63,9 @@ var indicate = function indicate (element) {
 }
 var scrollToElement = function scrollToElement (element) {
 	$("html,body").animate({
-		scrollTop: $(element).position().top >> 0
+		scrollTop: Math.round($(element).position().top)
 	}, { duration: 300, ease: "easeout" } )
-	//indicate(element)
+	indicate(element)
 }
 var toggleMenu = function toggleMenu () {
 	var $menu = $(".navigation")
