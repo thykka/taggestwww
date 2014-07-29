@@ -1,0 +1,65 @@
+ /*
+  *	Taggest Base CSS
+  *
+  * URL:       http://github.com/thykka/taggestwww/
+  * author:    Moses Holmström <thykka@gmail.com>
+  * license:   AGPL
+  * comments:  :)
+//*/
+
+@import "functions";
+@import "mixins";
+@import "theme";
+
+html, body {}
+.navigation {
+	.menu {
+		.nav-menu {
+			&:hover {	}
+		}
+		.nav-item {
+			a {
+				&:focus {	}
+			}
+			&:hover {
+				a {	}
+			}
+			&:nth-child(3n+2) {	}
+			&:nth-child(3n+3) {	}
+			&:nth-child(3n+4) {	}
+		}
+	}
+	&.open {
+		.menu {
+			.nav-item {	}
+		}
+	}
+	.nav-item.current {
+		&:nth-child(3n+2) {	}
+		&:nth-child(3n+3) {	}
+		&:nth-child(3n+4) {	}
+	}
+}
+h1, h2, h3, h4 { }
+#content {
+	&.open {
+		.page:before {	}
+	}
+	.page {
+		&:nth-child(3n+1) {
+			&:before { }
+		}
+		&:nth-child(3n+2) {
+			&:before { }
+		}
+		&:nth-child(3n+3) {
+			&:before { }
+		}
+	}
+	.page:before { }
+	&.open .page { }
+	h1 { }
+	.block {
+		p { }
+	}
+}
