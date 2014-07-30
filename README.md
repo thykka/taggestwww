@@ -1,6 +1,8 @@
 Taggest.com
 ==========
 
+Preview at http://thykka.github.com/taggestwww/
+
 Requirements
 ============
 * Node.js ~0.10.24
