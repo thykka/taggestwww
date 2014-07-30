@@ -2,7 +2,6 @@
 @import "mixins";
 @import "theme";
 @import "logo";
-@import url("http://fonts.googleapis.com/css?family=Londrina+Solid");
 
 html, body {
 	position: relative;
@@ -54,7 +53,7 @@ html, body {
 	&:nth-child(3n+2) {background: $c-fn-2;}
 	&:nth-child(3n+3) {background: $c-fn-3;}
 	h1 {
-		font-family: "Londrina Solid", $font-family;
+		font-family: $title-font-family;
 		display: block;
 		margin: 0;
 		padding: 0.4em 0.5rem 0.4em 1rem;
@@ -62,7 +61,7 @@ html, body {
 		text-shadow: 0 1.5px 0 rgba($c-txt-dk,0.5);
 		line-height: 1.25em;
 		font-size: 2rem;
-		font-weight: 500;
+		font-weight: $title-font-weight;
 		text-decoration: none;
 	}
 }

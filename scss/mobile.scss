@@ -6,7 +6,6 @@
   * license:   AGPL
   * comments:  :)
 //*/
-
 @import "functions";
 @import "mixins";
 @import "theme";
@@ -206,7 +205,8 @@ h1, h2, h3, h4 {
 		color: $c-txt-lt;
 		text-shadow: 0 1px rgba($c-txt-dk,0.6);
 		font-size: 1.5rem;
-		font-family: "Londrina Solid", $font-family;
+		font-family: $title-font-family;
+		font-weight: $title-font-weight;
 		padding: 0.27em 0.5rem 0.27em 0.5rem;
 		margin: 0 0 1rem 0;
 		line-height: 1.44em;

@@ -1,25 +1,31 @@
+@import url("http://fonts.googleapis.com/css?family=Source+Sans+Pro:400,400italic,700,700italic");
+@font-face {
+  font-family: "Museo300Regular";
+  src: url("fonts/Museo300-Regular-webfont.eot");
+  src: url("fonts/Museo300-Regular-webfont.eot?#iefix") format("embedded-opentype"), url("fonts/Museo300-Regular-webfont.woff") format("woff"), url("fonts/Museo300-Regular-webfont.ttf") format("truetype"), url("fonts/Museo300-Regular-webfont.svg#Museo300Regular") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
 /* colors */
-@import url("http://fonts.googleapis.com/css?family=Londrina+Solid");
-@import url("http://fonts.googleapis.com/css?family=Londrina+Solid");
-/* line 3, ../../scss/_logo.scss */
+/* line 1, ../../scss/_logo.scss */
 .logo {
   cursor: pointer;
   position: relative;
   background: #000;
   display: inline-flex;
   line-height: 1em;
-  font-weight: 400;
+  font-weight: 700;
   width: 2em;
   height: 2em;
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
   box-sizing: border-box;
-  padding: 0.25em 0.125em;
+  padding: 0.1em 0.1em;
 }
-/* line 17, ../../scss/_logo.scss */
+/* line 15, ../../scss/_logo.scss */
 .logo .row {
-  margin-top: -0.125em;
   flex: 1;
   display: flex;
   width: 100%;
@@ -29,67 +35,57 @@
   align-items: center;
   transform: scaleY(1.1);
 }
-/* line 30, ../../scss/_logo.scss */
+/* line 27, ../../scss/_logo.scss */
 .logo:hover .ltr.t {
   color: #60b99a;
 }
-/* line 31, ../../scss/_logo.scss */
+/* line 28, ../../scss/_logo.scss */
 .logo:hover .ltr.a {
   color: #60b99a;
 }
-/* line 32, ../../scss/_logo.scss */
+/* line 29, ../../scss/_logo.scss */
 .logo:hover .ltr.g {
   color: #60b99a;
 }
-/* line 33, ../../scss/_logo.scss */
+/* line 30, ../../scss/_logo.scss */
 .logo:hover .ltr.d {
   color: black;
 }
-/* line 34, ../../scss/_logo.scss */
+/* line 31, ../../scss/_logo.scss */
 .logo:hover .ltr.e {
   color: #60b99a;
 }
-/* line 35, ../../scss/_logo.scss */
+/* line 32, ../../scss/_logo.scss */
 .logo:hover .ltr.s {
   color: #60b99a;
 }
-/* line 38, ../../scss/_logo.scss */
+/* line 35, ../../scss/_logo.scss */
 .logo .ltr {
-  font-family: "Londrina Solid", "Droid Sans", sans-serif;
+  font-size: 0.612em;
+  font-family: "Museo300Regular", serif;
   display: inline-block;
-  flex: 1;
   color: #FFF;
   box-sizing: border-box;
-}
-/* line 44, ../../scss/_logo.scss */
-.logo .ltr.a {
-  margin-left: -0.125em;
-}
-/* line 47, ../../scss/_logo.scss */
-.logo .ltr.g {
-  margin-top: -0.1em;
-  transform: scaleY(0.75);
-}
-/* line 51, ../../scss/_logo.scss */
-.logo .ltr.d {
-  font-size: 0.85em;
+  margin-top: -0.06em;
+  padding-bottom: 0.06em;
+  text-transform: capitalize;
 }
 
-/* line 7, ../../scss/desktop.scss */
+/* line 6, ../../scss/desktop.scss */
 html, body {
   position: relative;
   width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  font-family: "Droid Sans", sans-serif;
+  font-family: "Source Sans Pro", "Trebuchet MS", sans-serif;
   font-size: 20px;
   background: #f8f7e6;
   overflow-x: hidden;
   overflow-y: auto;
 }
 
-/* line 17, ../../scss/desktop.scss */
+/* line 16, ../../scss/desktop.scss */
 .logo {
   position: fixed;
   top: 0.8rem;
@@ -98,7 +94,7 @@ html, body {
   font-size: 3rem;
 }
 
-/* line 24, ../../scss/desktop.scss */
+/* line 23, ../../scss/desktop.scss */
 .navigation {
   position: fixed;
   display: block;
@@ -108,13 +104,13 @@ html, body {
   transform: translateY(-50%);
   z-index: 9001;
 }
-/* line 33, ../../scss/desktop.scss */
+/* line 32, ../../scss/desktop.scss */
 .navigation .nav-item {
   overflow: hidden;
   width: 1rem;
 }
 
-/* line 38, ../../scss/desktop.scss */
+/* line 37, ../../scss/desktop.scss */
 #content {
   display: block;
   margin: 0;
@@ -125,7 +121,7 @@ html, body {
   box-sizing: border-box;
 }
 
-/* line 47, ../../scss/desktop.scss */
+/* line 46, ../../scss/desktop.scss */
 .page {
   display: block;
   overflow: hidden;
@@ -133,21 +129,21 @@ html, body {
   width: 100%;
   min-height: 100%;
 }
-/* line 53, ../../scss/desktop.scss */
+/* line 52, ../../scss/desktop.scss */
 .page:nth-child(3n+1) {
   background: #adab7c;
 }
-/* line 54, ../../scss/desktop.scss */
+/* line 53, ../../scss/desktop.scss */
 .page:nth-child(3n+2) {
   background: #60b99a;
 }
-/* line 55, ../../scss/desktop.scss */
+/* line 54, ../../scss/desktop.scss */
 .page:nth-child(3n+3) {
   background: #f77825;
 }
-/* line 56, ../../scss/desktop.scss */
+/* line 55, ../../scss/desktop.scss */
 .page h1 {
-  font-family: "Londrina Solid", "Droid Sans", sans-serif;
+  font-family: "Museo300Regular", serif;
   display: block;
   margin: 0;
   padding: 0.4em 0.5rem 0.4em 1rem;
@@ -155,17 +151,17 @@ html, body {
   text-shadow: 0 1.5px 0 rgba(8, 8, 8, 0.5);
   line-height: 1.25em;
   font-size: 2rem;
-  font-weight: 500;
+  font-weight: 700;
   text-decoration: none;
 }
 
-/* line 69, ../../scss/desktop.scss */
+/* line 68, ../../scss/desktop.scss */
 .block {
   display: block;
   font-size: 1rem;
   margin: 0 0 0 1rem;
 }
-/* line 73, ../../scss/desktop.scss */
+/* line 72, ../../scss/desktop.scss */
 .block > p, .block > div, .block > ul {
   max-width: calc(100% - 12rem);
   min-width: 26rem;
@@ -176,7 +172,7 @@ html, body {
   background: white;
   box-shadow: 0 0.4rem 0 0 rgba(248, 247, 230, 0.67);
 }
-/* line 83, ../../scss/desktop.scss */
+/* line 82, ../../scss/desktop.scss */
 .block .threeBox {
   position: relative;
   display: flex;
@@ -186,7 +182,7 @@ html, body {
   list-style: none;
   width: 100%;
 }
-/* line 91, ../../scss/desktop.scss */
+/* line 90, ../../scss/desktop.scss */
 .block .threeBox .threeBoxItem {
   flex: 1;
   min-width: calc(150px + 1.5rem);
@@ -197,11 +193,11 @@ html, body {
   background: #adab7c;
   box-shadow: inset 0 2px 4px 1px rgba(51, 50, 32, 0.2);
 }
-/* line 101, ../../scss/desktop.scss */
+/* line 100, ../../scss/desktop.scss */
 .block .threeBox .threeBoxItem img {
   outline: 1px dashed rgba(255, 255, 255, 0.7);
 }
-/* line 104, ../../scss/desktop.scss */
+/* line 103, ../../scss/desktop.scss */
 .block .threeBox .threeBoxItem p {
   color: #fafafa;
   font-weight: bold;

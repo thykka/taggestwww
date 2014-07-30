@@ -1,21 +1,18 @@
-@import url("http://fonts.googleapis.com/css?family=Londrina+Solid");
-
 .logo {
   cursor: pointer;
   position: relative;
   background: #000;
   display: inline-flex;
   line-height: 1em;
-  font-weight: 400;
+  font-weight: 700;
   width: 2em;
   height: 2em;
   flex-flow: column nowrap;
   justify-content: space-around;
   align-items: center;
   box-sizing: border-box;
-  padding: 0.25em 0.125em;
+  padding: 0.1em 0.1em;
   .row {
-    margin-top: -0.125em;
     flex: 1;
     display: flex;
     width: 100%;
@@ -36,20 +33,13 @@
     }
   }
   .ltr {
-    font-family: "Londrina Solid", $font-family;
+    font-size: 0.612em;
+    font-family: $title-font-family;
     display: inline-block;
-    flex: 1;
     color: #FFF;
     box-sizing: border-box;
-    &.a {
-      margin-left: -0.125em;
-    }
-    &.g {
-      margin-top: -0.1em;
-      transform: scaleY(0.75);
-    }
-    &.d {
-      font-size: 0.85em;
-    }
+    margin-top: -0.06em;
+    padding-bottom: 0.06em;
+    text-transform: capitalize;
   }
 }

@@ -6,6 +6,10 @@
   * license:   AGPL
   * comments:  :)
 //*/
+@import "functions";
+@import "mixins";
+@import "theme";
+@import "logo";
 
 @media (max-width: 767px) {
 	@import "./mobile.scss";
